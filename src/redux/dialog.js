@@ -31,10 +31,4 @@ export const ordersApi = createApi({
   }),
 });
 
-export const {
-  useGetAllQuery,
-  useGetByIdQuery,
-  useDeleteMutation,
-  useCreateMutation,
-  useUpdateMutation,
-} = ordersApi;
+export const { useGetAllQuery, useCreateMutation } = ordersApi;
