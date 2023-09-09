@@ -19,12 +19,21 @@ export const ContentContainer = styled.div`
 `;
 export const DialogListCont = styled.div`
   overflow-y: scroll;
-  height: 90%;
+  height: 85%;
+  margin-bottom: 20px;
 `;
 
 export const Logo = styled.p`
   color: #000a10;
   font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 70px;
+`;
+export const Typing = styled.p`
+  position: absolute;
+  left: 10%;
+  color: #acadad;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 70px;
 `;
@@ -95,6 +104,7 @@ export const MessageBoxAns = styled.div`
   }
 `;
 export const FormStyled = styled.form`
+  position: relative;
   padding-bottom: 0;
   margin-bottom: 20px;
   font-family: ${theme.FONTS.WEIGHTS.normal};

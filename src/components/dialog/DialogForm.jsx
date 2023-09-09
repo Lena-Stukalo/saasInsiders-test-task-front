@@ -1,12 +1,13 @@
 import YourSvg from "../../images/send.svg";
-import { Svg, FormStyled, Button, DialogInput } from "./dialog.styled";
+import { Svg, FormStyled, Button, DialogInput, Typing } from "./dialog.styled";
 import { useFormik } from "formik";
-const DialogForm = ({ onSubmit }) => {
+const DialogForm = ({ onSubmit, setLoading, isLoading }) => {
   const formValues = {
     question: "",
   };
   const handeleSubmit = (values, { resetForm }) => {
     onSubmit(values);
+    setLoading(true);
     resetForm(formValues);
   };
 
@@ -16,6 +17,7 @@ const DialogForm = ({ onSubmit }) => {
   });
   return (
     <FormStyled onSubmit={formik.handleSubmit}>
+      {isLoading && <Typing>AgileGPT writing..</Typing>}
       <DialogInput
         type="text"
         name="question"
