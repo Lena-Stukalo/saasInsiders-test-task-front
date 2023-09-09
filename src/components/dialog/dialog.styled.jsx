@@ -48,7 +48,6 @@ export const MessageBoxQue = styled.div`
   position: relative;
   background: #fee2c5;
   text-align: right;
-  min-width: 45%;
   max-width: 65%;
   padding: 10px 15px;
   border-radius: 6px;
@@ -75,7 +74,6 @@ export const MessageBoxAns = styled.div`
   position: relative;
   background: #c4ddff;
   text-align: right;
-  min-width: 45%;
   max-width: 65%;
   padding: 10px 15px;
   border-radius: 6px;
