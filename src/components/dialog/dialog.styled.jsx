@@ -50,7 +50,7 @@ export const MessageBox = styled.div`
   margin-bottom: 20px;
   display: flex;
   justify-content: ${(props) =>
-    props.isownmessage ? "end;" : "start;"}; /* Власні повідомлення справа */
+    props.isownmessage ? "end;" : "start;"}; 
 `;
 
 export const MessageBoxQue = styled.div`

@@ -1,6 +1,6 @@
 import DialogForm from "./DialogForm";
 import DialogList from "./DialogList";
-import { ContentContainer, Typing } from "./dialog.styled";
+import { ContentContainer } from "./dialog.styled";
 import { useCreateMutation, useGetAllQuery } from "../../redux/dialog";
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
